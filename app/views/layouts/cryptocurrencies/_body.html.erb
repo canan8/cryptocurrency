@@ -1,5 +1,9 @@
 <tr class="striped--light-gray">
   <td class="ph3 pv2"><%= currency.name %></td>
   <td class="ph3 pv2"><%= currency.single_transaction_cost %></td>
-  <td class="ph3 pv2" style="word-break: break-all;"><%= currency.multisig_transaction_cost %></td>
+  <% if currency.multisig_multiplication_factor.present? %>
+    <td class="ph3 pv2"><%= currency.multisig_transaction_cost %></td>
+  <% else %>
+    <td class="ph3 pv2"><%= 'N/A' %></td>
+  <% end %>
 </tr>
