@@ -1,7 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Currency.create(name: 'Bitcoin', symbol: 'BTC', unique_id: 'bitcoin', multisig_multiplication_factor: 2)
+Currency.create(name: 'Ethereum', symbol: 'ETH', unique_id: 'ethereum', multisig_multiplication_factor: 20)
+Currency.create(name: 'Bitcoin SV', symbol: 'BSV', unique_id: 'bitcoin-sv')
+Currency.create(name: 'Binance Coin', symbol: 'BNB', unique_id: 'binance-coin', multisig_multiplication_factor: 20)
