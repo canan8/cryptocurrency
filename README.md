@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Shows cryptocurrencies and their transaction costs.
 
-Things you may want to cover:
+Make sure to:
 
-* Ruby version
+- Install all the necessary gems.
+- Setup your database
+- Seed your database
 
-* System dependencies
 
-* Configuration
+Ruby version: 2.6.6
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Rails version: 6.1.4
