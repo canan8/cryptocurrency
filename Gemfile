@@ -28,9 +28,20 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# HTTP/REST API client library. (https://github.com/lostisland/faraday)
+gem 'faraday'
+
+# Scheduler. See: http://github.com/javan/whenever
+gem 'whenever', require: false
+
+# Pretty print Ruby objects with proper indentation and colors
+# (https://github.com/awesome-print/awesome_print)
+gem 'awesome_print'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
 end
 
 group :development do
