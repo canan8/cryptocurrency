@@ -1,0 +1,12 @@
+<h1 class="f4">Cryptocurrencies</h1>
+
+<% if @currencies.any? %>
+  <table class="collapse ba br2 b--black-10 pv2 ph3">
+    <%= render 'layouts/cryptocurrencies/header' %>
+    <% @currencies.each do |currency| %>
+      <%= render partial: 'layouts/cryptocurrencies/body', locals: {currency: currency} %>
+    <% end %>
+  </table>
+<% else %>
+  <p>No cryptocurrencies yet.</p>
+<% end %>
