@@ -1,7 +1,8 @@
 namespace :costs do
   desc 'Update single transaction cost of each cryptocurrency.'
   task update_single_transaction_costs: :environment do
-    Currency.all.each do |currency|
+    currencies = Currency.all
+    currencies.each do |currency|
       begin
         if currency.updated_at < 10.minutes.ago
           currency.set_single_transaction_cost
